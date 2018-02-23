@@ -3,7 +3,7 @@ var app =express();
 
 app.get('/home',function(req,res){
 
-	res.send("welcoe sanksar");
+	res.send("welcome sanksar");
 
 });
 var server = app.listen(8000,function(){
