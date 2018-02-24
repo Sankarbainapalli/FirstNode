@@ -10,13 +10,16 @@
   "author": "sankar",
   "license": "MIT",
   "dependencies": {
+    "auth": "0.0.9",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "http": "0.0.0",
     "lodash": "^3.10.1",
     "moment": "^2.20.1",
     "mongodb": "^2.2.33",
+    "mongoose": "^5.0.7",
     "mysql": "^2.15.0",
+    "nodemailer": "^4.6.0",
     "underscore": "^1.8.3"
   }
 }
