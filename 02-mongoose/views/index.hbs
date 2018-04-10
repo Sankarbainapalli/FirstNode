@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+	<h1>Crud Operation</h1>
+	<div style="padding:30px;margin:20px;background-color: pink;float:left;height: 300px">
+		<h1>insert</h1>
+<form action="/insert" method="post">
+	<table>
+		
+	<tr><td>FirstName</td><td><input type="text" name="FirstName"></td></tr>
+	<tr><td>LastName</td><td><input type="text" name="LastName"></td></tr>
+	<tr><td>Email</td><td><input type="text" name="Email"></td></tr>
+	<tr><td>Password</td><td><input type="text" name="Pass"></td></tr>
+<tr align="center"><td ><button type="submit" value="submit">submit</button></td></tr>
+
+	</table>
+</form>
+</div>
+<div style="padding:30px;margin:20px;background-color: pink;float:left;height: 300px;">
+		<h1>update</h1>
+<form action="/update" method="post">
+	<table>
+		
+	<tr><td>FirstName</td><td><input type="text" name="FirstName"></td></tr>
+	<tr><td>LastName</td><td><input type="text" name="LastName"></td></tr>
+	<tr><td>Email</td><td><input type="text" name="Email"></td></tr>
+	<tr><td>Password</td><td><input type="text" name="Pass"></td></tr>
+<tr align="center"><td colspan="6" rowspan="5"><button type="submit" value="submit">submit</button></td></tr>
+
+	</table>
+</form>
+</div>
+
+<div style="padding:30px;margin:20px;background-color: pink;float:left;height: 300px;width:200px;">
+		<h1>show Data</h1>
+		<a href="/getdata">LoadData</a>
+<form action="/getdata" method="post">
+	
+{{# each items}}
+FirstName:{{this.FirstName}}
+LastName:{{this.LastName}}
+Email:{{this.Email}}
+{{/each}}
+
+</form>
+</div>
+</body>
+</html>
